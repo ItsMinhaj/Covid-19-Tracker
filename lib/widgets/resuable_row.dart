@@ -19,12 +19,13 @@ class ReusableRow extends StatelessWidget {
             padding: const EdgeInsets.all(4.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
+              children: [
                 Text(
-                  "Total",
-                  style: TextStyle(color: Colors.white70),
+                  title,
+                  style: const TextStyle(color: Colors.white70),
                 ),
-                Text("200", style: TextStyle(color: Colors.white70)),
+                Text(value.toString(),
+                    style: const TextStyle(color: Colors.white70)),
               ],
             ),
           ),
